@@ -1,5 +1,5 @@
 {
-  "name": "apollo-server",
+  "name": "apolloserver",
   "description": "",
   "license": "MIT",
   "main": "index.js",
@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "@sequelize/core": "7.0.0-alpha.10",
     "apollo-server": "^3.3.0",
     "graphql": "^15.5.3",
     "sequelize": "6.17.0",
