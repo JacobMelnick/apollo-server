@@ -1,8 +1,15 @@
-const Models = require("../models/user");
+const Model = require("../models/links");
 const resolvers = {
-  Query: {},
+  Query: {
+    list: () => Model.findAll()
+  },
 
-  Mutation: {}
+  Mutation: {
+    createLink: (root, { url }) => {
+      const urls = { url };
+      return Model.create(urls);
+    }
+  }
 };
 
 module.exports = resolvers;
