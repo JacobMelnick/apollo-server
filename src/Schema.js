@@ -11,7 +11,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    createLink(id: String!, url: String!): Links
+    createLink(id: String, url: String!): Links
   }
 `;
 module.exports = typeDefs;
